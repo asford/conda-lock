@@ -80,4 +80,5 @@ def write_conda_lock_file(
                 **json.loads(content.json(by_alias=True, exclude_unset=True)),
             },
             f,
+            sort_keys=False,
         )
